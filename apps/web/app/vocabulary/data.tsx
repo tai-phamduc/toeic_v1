@@ -4,7 +4,7 @@ export const vocabularyBooks = [
     name: "4000 Essential English Words Book 1",
     word_count: 600,
     units: [
-      { id: 1, title: "The Lion and the Rabbit" },
+      { id: 1, title: "The Lion and the Rabbit"},
       { id: 2, title: "The Laboratory" },
       { id: 3, title: "The Report" },
       { id: 4, title: "The Dog’s Bell" },

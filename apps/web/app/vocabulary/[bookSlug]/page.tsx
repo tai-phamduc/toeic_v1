@@ -26,7 +26,7 @@ export default async function BookPage({ params }: { params: { bookSlug: string 
       <p className="text-gray-600 mb-8">{book.word_count} Words</p>
 
       {/* Unit Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex flex-col gap-3">
         {book.units.map((unit) => (
           <Link 
             key={unit.id} 
@@ -34,8 +34,8 @@ export default async function BookPage({ params }: { params: { bookSlug: string 
             className="block group"
           >
             <div className="bg-secondary rounded-lg p-4 hover:shadow-md transition-shadow hover:border-primary">
-              <span className="text-xs font-bold text-gray-400 uppercase">Unit {unit.id}</span>
               <h3 className="font-semibold text-lg group-hover:text-primary mt-1">
+                <span className="text-xs font-bold text-gray-400 uppercase py-3">Unit {unit.id}</span>
                 {unit.title}
               </h3>
             </div>
